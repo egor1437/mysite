@@ -1,10 +1,10 @@
 <?php
 
 $name = $_POST['name'];
-$visitor_email = $ POST ['email'];
-$message = $_POST['message;]
+$visitor_email = $_POST ['email'];
+$message = $_POST['message'];
 
-$email_from = 'https://egor1437.github.io/mysite/messagepage.html';
+$email_from = 'https://egor1437.github.io/mysite/';
 
 $email subject = "New Form Submission";
 

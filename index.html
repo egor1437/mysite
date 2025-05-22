@@ -1,30 +1,108 @@
 <!DOCTYPE html>
-<html>
-<head profile="https://egor1437.github.io/mysite/">
-    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
-    <title>egor.dzhug</title>
-<link href="styles.css" rel="stylesheet"/>
-<link rel="icon" 
-      type="image/png" 
-      href="/Users/egordzugostransky/Downloads/heartlogo.jpeg">
-<style>
-    h1 {
-        color: red;
-        background-color: black;  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Egor’s Literature Blog</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; line-height: 1.6; color: #333; background: #fafafa; }
+    a { text-decoration: none; color: inherit; }
+    /* Header & Nav */
+    header { background: #444; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    nav ul { list-style: none; display: flex; gap: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    /* Hero */
+    .hero { background: url('https://source.unsplash.com/featured/?books') center/cover no-repeat; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.7); padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.2rem; }
+    /* Main Content */
+    main { padding: 2rem; max-width: 800px; margin: 0 auto; }
+    .post { background: #fff; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .post img { width: 100%; display: block; }
+    .post-content { padding: 1.5rem; }
+    .post-content h2 { margin-bottom: 0.5rem; font-family: 'Times New Roman', Times, serif; }
+    .post-content .meta { font-size: 0.9rem; color: #666; margin-bottom: 1rem; }
+    .post-content p { margin-bottom: 1rem; }
+    .post-content a.read-more { font-weight: bold; color: #444; }
+    /* Footer */
+    footer { text-align: center; padding: 1.5rem 0; font-size: 0.9rem; color: #666; }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav ul { flex-direction: column; gap: 0.5rem; }
     }
-</style>
+  </style>
 </head>
+<body>
 
-<body style="background-color: grey;">
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<img src="04F5FCC5-B088-4954-AE5F-4C85C4B5E8E4_1_105_c.jpeg" width="300">
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Welcome to My Literature Blog</h1>
+    <p>Exploring stories, poems, and prose—one entry at a time.</p>
+  </section>
 
-<hr>
-<h3><a href="archievepost.html">Архив</a></h3>
+  <!-- Main Content: Blog Posts -->
+  <main id="posts">
+  
+    <!-- Nabokov Article -->
+    <article class="post">
+      <div class="post-content">
+        <h2>The Half-Page That Vanished: Nabokov’s Omission in His Russian <em>Lolita</em></h2>
+        <div class="meta">May 22, 2025 • Literary Trivia</div>
+        <p>When Vladimir Nabokov first published <em>Lolita</em> in English (1955), he was a consummate stylist, famously fastidious about every nuance of wording and cadence. A decade later, in 1967, he decided to translate his own novel back into Russian, bringing Humbert Humbert’s arch voice into his native tongue. This Russian edition—issued by Phaedra Publishers in New York—was hailed as an extraordinary literary event, but it was never intended to be the final word on the text: Nabokov himself warned that crafting a flawless Russian <em>Lolita</em> would require almost supernatural precision.</p>
+        <p>For more than thirty years, readers of the Russian <em>Lolita</em> assumed Nabokov’s translation mirrored the English original, word for word. In January 2003, however, a Tula journalist named Aleksandr Svirilin published an article revealing that a crucial paragraph—about half a page long—was missing from the Russian translation. Svirilin compared the printed Russian text to Nabokov’s own manuscript of the translation and discovered that an entire passage—rich in both plot detail and linguistic play—had simply been omitted. Moreover, he noted a comical typo in the published text: the Russian word «веер» (“fan”) appears where Nabokov clearly intended «вечер» (“evening”).</p>
+        <p>Aleksandr Svirilin’s scoop did not go unanswered. Dmitri Nabokov, Vladimir’s son and literary executor, reportedly verified the omission against his father’s translation manuscript and agreed that the paragraph had indeed been left out during the original editing or typesetting process. He then promised that in the next Russian edition of <em>Lolita</em> the missing half-page would be fully restored—finally giving Russian-language readers access to the text in its author-approved entirety.</p>
+        <p>Nabokov’s prose is notoriously exacting: each sentence in <em>Lolita</em> teems with puns, echoing sounds, and subtle references. Losing even a few lines can shift shades of meaning, interrupt narrative rhythm, or obscure thematic echoes. For scholars and enthusiasts, the rediscovered passage wasn’t merely a matter of textual completeness—it was a key to understanding how Nabokov intended Humbert’s voice to resonate in Russian, and how that voice carries the novel’s moral and ironic tensions.</p>
+        <p>Following Dmitri’s assurance, subsequent printings of the Russian <em>Lolita</em> included the restored text, along with a brief editorial note acknowledging the earlier omission and that it derived from “scientific scrupulousness”—Nabokov’s own phrase for his painstaking approach to translation. Today, the story of the “lost half-page” stands as a reminder that even the world’s most meticulous writer can be tripped up by the vagaries of publication—and that dedicated readers and journalists can play a vital role in preserving literary integrity.</p>
+        <a href="#" class="read-more">Read more »</a>
+      </div>
+    </article>
 
+  </main>
 
-</div> 
+  <!-- About Section -->
+  <section id="about" style="background:#f0f0f0; padding:2rem;">
+    <div style="max-width:800px; margin:0 auto;">
+      <h2>About Me</h2>
+      <p>I’m Egor, a lifelong reader and aspiring writer. Through this blog, I share my thoughts on the books I love, the stories that moved me, and the craft of writing itself.</p>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" style="padding:2rem;">
+    <div style="max-width:800px; margin:0 auto;">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a> or follow me on social media:</p>
+      <ul style="list-style:none; display:flex; gap:1rem; padding:0; margin-top:1rem;">
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">Goodreads</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Egor Dzhugostransky. All rights reserved.
+  </footer>
 
 </body>
 </html>
